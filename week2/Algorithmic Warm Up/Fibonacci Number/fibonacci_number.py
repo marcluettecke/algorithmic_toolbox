@@ -13,7 +13,7 @@ def fibonacci_number_naive(n):
 def fibonacci_number(n):
     assert 0 <= n <= 45
 
-    type here
+    # type here
 
 
 if __name__ == '__main__':
