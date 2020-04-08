@@ -1,6 +1,7 @@
 import unittest
 from random import randint
-from maximum_salary import largest_number_naive, largest_number
+from algorithmic_toolbox.week3.Greedy_Algorithms.Maximum_Salary.maximum_salary import largest_number_naive, \
+    largest_number
 
 
 class TestLargestNumber(unittest.TestCase):
@@ -8,7 +9,6 @@ class TestLargestNumber(unittest.TestCase):
         for numbers in [
             [1],
             [1, 2],
-            type here
             [1, 12],
             [2, 12],
             [2, 21],

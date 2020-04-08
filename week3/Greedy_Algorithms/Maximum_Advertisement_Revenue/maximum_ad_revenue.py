@@ -4,6 +4,15 @@ from itertools import permutations
 
 
 def max_dot_product_naive(first_sequence, second_sequence):
+    """
+
+    Args:
+        first_sequence:
+        second_sequence:
+
+    Returns:
+
+    """
     assert len(first_sequence) == len(second_sequence)
     assert len(first_sequence) <= 10 ** 3
     assert all(0 <= f <= 10 ** 5 for f in first_sequence)
@@ -18,12 +27,23 @@ def max_dot_product_naive(first_sequence, second_sequence):
 
 
 def max_dot_product(first_sequence, second_sequence):
+    """
+
+    Args:
+        first_sequence:
+        second_sequence:
+
+    Returns:
+
+    """
     assert len(first_sequence) == len(second_sequence)
     assert len(first_sequence) <= 10 ** 3
     assert all(0 <= f <= 10 ** 5 for f in first_sequence)
     assert all(0 <= s <= 10 ** 5 for s in second_sequence)
 
-    type here
+    sorted1 = sorted(first_sequence, reverse=True)
+    sorted2 = sorted(second_sequence, reverse=True)
+    return sum([i[0] * i[1] for i in zip(sorted1, sorted2)])
 
 
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
 import unittest
-from maximum_ad_revenue import max_dot_product, max_dot_product_naive
+from algorithmic_toolbox.week3.Greedy_Algorithms.Maximum_Advertisement_Revenue.maximum_ad_revenue import \
+    max_dot_product, max_dot_product_naive
 
 
 class TestMaxDotProduct(unittest.TestCase):
@@ -11,8 +12,7 @@ class TestMaxDotProduct(unittest.TestCase):
             ([1, 2], [5, 10]),
             ([2, 1], [5, 10]),
             ([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]),
-            ([17, 12, 20], [19, 2, 3]),
-            type here
+            ([17, 12, 20], [19, 2, 3])
         ]:
             self.assertEqual(
                 max_dot_product(list(first_sequence), list(second_sequence)),
@@ -23,7 +23,6 @@ class TestMaxDotProduct(unittest.TestCase):
         n = 10 ** 3
         self.assertEqual(max_dot_product([0] * n, [0] * n), 0)
         self.assertEqual(max_dot_product([1] * n, [1] * n), n)
-        type here
 
 
 

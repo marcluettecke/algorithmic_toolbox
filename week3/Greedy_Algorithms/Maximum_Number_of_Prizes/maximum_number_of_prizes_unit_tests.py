@@ -1,10 +1,11 @@
 import unittest
-from maximum_number_of_prizes import compute_optimal_summands
+from algorithmic_toolbox.week3.Greedy_Algorithms.Maximum_Number_of_Prizes.maximum_number_of_prizes import \
+    compute_optimal_summands
 
 
 class MaximumNumberOfPrizes(unittest.TestCase):
     def test(self):
-        for (n, answer) in [(1, 1), (6, 3), (100, 13), type here]:
+        for (n, answer) in [(1, 1), (6, 3), (100, 13)]:
             summands = compute_optimal_summands(n)
             self.assertEqual(len(summands), answer)
             self.assertEqual(sum(summands), n)
