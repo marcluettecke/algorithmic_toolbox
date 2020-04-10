@@ -1,5 +1,6 @@
 import unittest
-from majority_element import majority_element, majority_element_naive
+from algorithmic_toolbox.week4.Divide_and_Conquer.Majority_Element.majority_element import majority_element, \
+    majority_element_naive
 
 
 class TestMajorityElement(unittest.TestCase):
@@ -8,8 +9,7 @@ class TestMajorityElement(unittest.TestCase):
             [7, 2, 7],
             [7, 8, 9],
             [2, 3, 2, 3],
-            [1, 2, 3, 4],
-            type here
+            [1, 2, 3, 4]
         ]:
             self.assertEqual(
                 majority_element(list(elements)),

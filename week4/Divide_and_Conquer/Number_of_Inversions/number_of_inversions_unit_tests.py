@@ -1,5 +1,6 @@
 import unittest
-from number_of_inversions import compute_inversions, compute_inversions_naive
+from algorithmic_toolbox.week4.Divide_and_Conquer.Number_of_Inversions.number_of_inversions import compute_inversions, \
+    compute_inversions_naive
 from random import randint
 
 
@@ -7,8 +8,7 @@ class TestNumberOfInversions(unittest.TestCase):
     def test_small(self):
         for array in [
             ([1, 2, 3]),
-            ([3, 2, 1]),
-            type here
+            ([3, 2, 1])
         ]:
             self.assertEqual(compute_inversions(array),
                              compute_inversions_naive(array))
@@ -22,7 +22,7 @@ class TestNumberOfInversions(unittest.TestCase):
 
     def test_large(self):
         self.assertEqual(compute_inversions([1] * 100), 0)
-        type here
+
 
 if __name__ == '__main__':
     unittest.main()
