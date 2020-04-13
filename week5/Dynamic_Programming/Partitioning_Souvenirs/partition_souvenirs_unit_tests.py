@@ -1,5 +1,5 @@
 import unittest
-from partition_souvenirs import partition3
+from algorithmic_toolbox.week5.Dynamic_Programming.Partitioning_Souvenirs.partition_souvenirs import partition3
 
 
 class PartitionSouvenirs(unittest.TestCase):
@@ -9,7 +9,6 @@ class PartitionSouvenirs(unittest.TestCase):
             ((7, 7, 7), 1),
             ((3, 3, 3), 1),
             ((3, 3, 3, 3), 0),
-            type here
         ):
             self.assertEqual(partition3(values), answer)
 
